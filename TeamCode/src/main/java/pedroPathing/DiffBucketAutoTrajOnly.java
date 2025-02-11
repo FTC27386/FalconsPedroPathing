@@ -136,7 +136,7 @@ public void buildPaths() {
                 setPathState(1);
             case 1:
                 if (!follower.isBusy()) {
-                    //Add scoring stuff -M
+                    //Add scoring stuff and intake when needed -M
                     follower.followPath(preload_score);
                     setPathState(2);
                 }
