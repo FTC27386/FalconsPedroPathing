@@ -129,7 +129,7 @@ public void buildPaths() {
 }
 //ALL FOLLOWING COMMENTS ARE NOT MINE UNLESS SPECIFICALLY SAID.
 //THE FOLLOWING CODE COMES FROM THE SAMPLE. I think having a continuously running switch case on a loop in auto is a good idea b/c it allows for deciding next action based on camera input with a time limit, etc.
-    public void autonomousPathUpdate() {
+    public void autonomousPathUpdate() { //The robot "figures out" what to do next. Remember that advancing to the next path can be based on another factor, or multiple, like time. -M
         switch (pathState) {
             case 0:
                 follower.followPath(preload_space);
