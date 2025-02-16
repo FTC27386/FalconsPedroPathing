@@ -50,6 +50,10 @@ public class ExampleFieldCentricTeleop extends OpMode {
         - Turn Left/Right Movement: -gamepad1.right_stick_x
         - Robot-Centric Mode: false
         */
+        if(gamepad1.options)
+        {
+            follower.setHeadingOffset(0);
+        }
 
         follower.setTeleOpMovementVectors(-gamepad1.left_stick_y, -gamepad1.left_stick_x, -gamepad1.right_stick_x, false);
         follower.update();
